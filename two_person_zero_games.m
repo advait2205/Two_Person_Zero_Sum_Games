@@ -1,9 +1,4 @@
-clc; clear all; clear vars;
-
-% Pay-off Matrix
-A=[4,-2,6
-   3,1,5
-   2,4,-1];
+function [prob_A, prob_B, value_of_the_game]=two_person_zero_sum(A)
 
 % Minimax-Maximin Principle
 temp1=max(A,[],2);  
