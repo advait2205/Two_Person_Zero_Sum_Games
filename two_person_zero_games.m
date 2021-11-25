@@ -19,7 +19,7 @@ else
  %  temp=temp+1;
  min_value=(min(temp));
  if (min_value<0)       %Make all the coefficients positive
-        min_value=min_value+1;
+        min_value=abs(min_value)+1;
         A=A+min_value;       
         display(A);
  else
